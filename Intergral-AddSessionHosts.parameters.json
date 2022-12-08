@@ -1,0 +1,127 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "nestedTemplatesLocation": {
+            "value": "https://raw.githubusercontent.com/VuBoo/Azure/main/NestedTemplates/"
+        },
+        "artifactsLocation": {
+            "value": "https://raw.githubusercontent.com/Azure/RDS-Templates/master/ARM-wvd-templates/DSC/Configuration.zip"
+        },
+        "tags": {
+            "value": {}
+        },
+        "hostpoolName": {
+            "value": "INTC-AVD-NCUS-GPU-DEV" 
+        },
+        "hostpoolToken": {
+            "value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IkFGNTRGNjhEQUE2OTdGNjdDMEQwOTE0MkU3QkVEMjc3QTI3NTZCQTciLCJ0eXAiOiJKV1QifQ.eyJSZWdpc3RyYXRpb25JZCI6IjhmNmM4NTRlLWFjOWYtNGUzYi05NTU2LTE5YzE2Y2Q5NTllNyIsIkJyb2tlclVyaSI6Imh0dHBzOi8vcmRicm9rZXItZy11cy1yMC53dmQubWljcm9zb2Z0LmNvbS8iLCJEaWFnbm9zdGljc1VyaSI6Imh0dHBzOi8vcmRkaWFnbm9zdGljcy1nLXVzLXIwLnd2ZC5taWNyb3NvZnQuY29tLyIsIkVuZHBvaW50UG9vbElkIjoiNWRkOWUzNmUtNTczYy00YWU1LWJjZTgtYTlmMzA5Yjk3NDkzIiwiR2xvYmFsQnJva2VyVXJpIjoiaHR0cHM6Ly9yZGJyb2tlci53dmQubWljcm9zb2Z0LmNvbS8iLCJHZW9ncmFwaHkiOiJVUyIsIkdsb2JhbEJyb2tlclJlc291cmNlSWRVcmkiOiJodHRwczovLzVkZDllMzZlLTU3M2MtNGFlNS1iY2U4LWE5ZjMwOWI5NzQ5My5yZGJyb2tlci53dmQubWljcm9zb2Z0LmNvbS8iLCJCcm9rZXJSZXNvdXJjZUlkVXJpIjoiaHR0cHM6Ly81ZGQ5ZTM2ZS01NzNjLTRhZTUtYmNlOC1hOWYzMDliOTc0OTMucmRicm9rZXItZy11cy1yMC53dmQubWljcm9zb2Z0LmNvbS8iLCJEaWFnbm9zdGljc1Jlc291cmNlSWRVcmkiOiJodHRwczovLzVkZDllMzZlLTU3M2MtNGFlNS1iY2U4LWE5ZjMwOWI5NzQ5My5yZGRpYWdub3N0aWNzLWctdXMtcjAud3ZkLm1pY3Jvc29mdC5jb20vIiwiQUFEVGVuYW50SWQiOiI1NDZkMWI4NS1lYzUxLTQwZGQtOTI4MC04NzMyOThhM2MzZjAiLCJuYmYiOjE2NjgyNzc3MzIsImV4cCI6MTY3MDU3MjgwMCwiaXNzIjoiUkRJbmZyYVRva2VuTWFuYWdlciIsImF1ZCI6IlJEbWkifQ.TEqPuaSryAgkX-wQpfTmb9bPZdYdBt0gEt2VH_fBlDB0mLaLbe3pRYXXOn2Wi6jM5mj-JE4BCC010do9VItRmFInov6tbcs9brvmRh2ygo9XHMduQ4qwzgGVGS75tJa1LYMiO1OxIsDN9FK0ekWdJNgiwcyfv16fVCr-w9f8HAsjiNvVGAgnZt0gvN4qUl87HyERvixG0a6QmzY6fSsL-RIfJptnXB50Dr3XHOe8JtF1wH2OKHOmzkKb11Ahj-Y6HSMy9i6RArw25dv5ggWBDM-jPcJVrWH7CEXtrUXs7WCd2Mkm2-fhiTr4PznoUTfRB9U6xGir4s6Nih40i_INAQ" 
+        },
+        "administratorAccountUsername": {
+            "value": "vhoang@integral-corp.com"
+        },
+        "administratorAccountPassword": {
+            "reference": {
+                "keyVault": {
+                  "id": "/subscriptions/cba1395f-adef-4d7a-ac3c-0e9624bca125/resourceGroups/INTC-RG-AVD/providers/Microsoft.KeyVault/vaults/INTC-KV"
+                },
+                "secretName": "vhoang"
+            }
+        },
+        "vmAdministratorAccountUsername": {
+            "value": "cfadmin"
+        },
+        "vmAdministratorAccountPassword": {
+            "reference": {
+                "keyVault": {
+                  "id": "/subscriptions/cba1395f-adef-4d7a-ac3c-0e9624bca125/resourceGroups/INTC-RG-AVD/providers/Microsoft.KeyVault/vaults/INTC-KV"
+                },
+                "secretName": "cfadmin"
+            }
+        },
+        "availabilityOption": {
+            "value": "None"
+        },
+        "createAvailabilitySet": {
+            "value": false
+        },
+        "availabilitySetUpdateDomainCount": {
+            "value": 5
+        },
+        "availabilitySetFaultDomainCount": {
+            "value": 2
+        },
+        "availabilityZones": {
+            "value": []
+        },
+        "vmResourceGroup": {
+            "value": "INTC-RG-AVD" 
+        },
+        "vmLocation": {
+            "value": "North Central US" 
+        },
+        "vmSize": {
+            "value": "Standard_NV8as_v4" 
+        },
+        "vmInitialNumber": {
+            "value": 1
+        },
+        "vmNumberOfInstances": {
+            "value": 1 
+        },
+        "vmNamePrefix": {
+            "value": "IA-DEVGPU" 
+        },
+        "vmImageType": {
+            "value": "CustomImage"
+        },
+        "vmGalleryImageOffer": {
+            "value": ""
+        },
+        "vmGalleryImagePublisher": {
+            "value": ""
+        },
+        "vmGalleryImageSKU": {
+            "value": ""
+        },
+        "vmImageVhdUri": {
+            "value": ""
+        },
+        "vmCustomImageSourceId": {
+            "value": "/subscriptions/cba1395f-adef-4d7a-ac3c-0e9624bca125/resourceGroups/INTC-RG-AVD-NCUS/providers/Microsoft.Compute/galleries/INTC_AVD_GALLERY_NCUS/images/INTC-GPU-IMAGE-8302022"
+        },
+        "vmDiskType": {
+            "value": "StandardSSD_LRS"
+        },
+        "vmUseManagedDisks": {
+            "value": true
+        },
+        "existingVnetName": {
+            "value": "INTC-VNET01-AVD-NCUS"
+        },
+        "existingSubnetName": {
+            "value": "INTC-SUB01-AVD-NCUS" 
+        },
+        "virtualNetworkResourceGroupName": {
+            "value": "INTC-RG-AVD-NCUS"
+        },
+        "ouPath": {
+            "value": "OU=Computers Azure,DC=integral-corp,DC=com"
+        },
+        "domain": {
+            "value": "integral-corp.com"
+        },
+        "workspaceId": {
+            "value": "6e3ad62c-dd67-4e11-b031-402ad39120d2"
+        },
+        "workspaceKey": {
+            "value": "iBzuxzhAQmtcxZP4525L0T1xOyG3olV0Et+54rZXUhrxY51x6Ic5ytkQ3Xo6rKH6F2RwtpMkW1FbX9cV6awZvg=="
+        },
+        "proximityPlacementGroupId": {
+            "value": "/subscriptions/cba1395f-adef-4d7a-ac3c-0e9624bca125/resourceGroups/INTC-RG-AVD/providers/Microsoft.Compute/proximityPlacementGroups/INTC-PPG-NCUS-01"
+        },
+        "needGPUExtention":{
+            "value": "true"
+        }
+    }
+}
