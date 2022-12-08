@@ -594,6 +594,10 @@
       "dependsOn": [
           "rdsh-dsc-loop"
       ],
+      "copy": {
+        "name": "rdsh-domain-join-loop",
+        "count": "[parameters('rdshNumberOfInstances')]"
+      },
       "properties": {
       "publisher": "Microsoft.HpcCompute",
       "type": "AmdGpuDriverWindows",
