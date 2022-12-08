@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "nestedTemplatesLocation": {
-            "value": "https://raw.githubusercontent.com/VuBoo/Azure/main/NestedTemplates/"
+            "value": "https://raw.githubusercontent.com/VuBoo/AzureDev/main/NestedTemplates/"
         },
         "artifactsLocation": {
             "value": "https://raw.githubusercontent.com/Azure/RDS-Templates/master/ARM-wvd-templates/DSC/Configuration.zip"
