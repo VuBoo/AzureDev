@@ -81,7 +81,7 @@
             "metadata": {
                 "description": "Whether to create a new availability set for the VMs."
             },
-            "defaultValue": true
+            "defaultValue": false
         },
         "availabilitySetUpdateDomainCount": {
             "type": "int",
