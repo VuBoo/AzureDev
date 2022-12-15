@@ -43,7 +43,7 @@
             "value": "None"
         },
         "createAvailabilitySet": {
-            "value": null
+            "value": false
         },
         "availabilitySetUpdateDomainCount": {
             "value": 5
