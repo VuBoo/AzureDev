@@ -42,9 +42,6 @@
         "availabilityOption": {
             "value": "None"
         },
-        "createAvailabilitySet": {
-            "value": false
-        },
         "availabilitySetUpdateDomainCount": {
             "value": 5
         },
@@ -75,18 +72,6 @@
         "vmImageType": {
             "value": "CustomImage"
         },
-        "vmGalleryImageOffer": {
-            "value": null
-        },
-        "vmGalleryImagePublisher": {
-            "value": null
-        },
-        "vmGalleryImageSKU": {
-            "value": null
-        },
-        "vmImageVhdUri": {
-            "value": null
-        },
         "vmCustomImageSourceId": {
             "value": "/subscriptions/cba1395f-adef-4d7a-ac3c-0e9624bca125/resourceGroups/INTC-RG-AUTO-WUS2/providers/Microsoft.Compute/galleries/INTC_AVD_TEST/images/INTC-TEST-IMAGE"
         },
@@ -96,9 +81,6 @@
         "vmUseManagedDisks": {
             "value": true
         },
-        "storageAccountResourceGroupName": {
-            "value": null
-        },
         "existingVnetName": {
             "value": "INTC-VNET01-AVD"
         },
@@ -107,12 +89,6 @@
         },
         "virtualNetworkResourceGroupName": {
             "value": "INTC-RG-AZ"
-        },
-        "createNetworkSecurityGroup": {
-            "value": null
-        },
-        "networkSecurityGroupId": {
-            "value": null
         },
         "networkSecurityGroupRules": {
             "value": []
@@ -125,12 +101,6 @@
         },
         "domain": {
             "value": "integral-corp.com"
-        },
-        "aadJoin": {
-            "value": null
-        },
-        "intune": {
-            "value": null
         },
         "workspaceId": {
             "value": "6e3ad62c-dd67-4e11-b031-402ad39120d2"
